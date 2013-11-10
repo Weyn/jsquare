@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jSquare</title>
+    <script type="text/javascript" src="lib/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="lib/jsquare.js"></script>
+    <style>
+        #jsquareSlider {
+            list-style: none;
+        }
+
+        .jSquare {
+            width: 1000px;
+            margin: auto auto;
+            perspective: 1000;
+        }
+        .jSquare img{
+            margin: 20px;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+        .jSquare img:hover {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+
+<ul id = "jsquareSlider">
+    <li>
+        <a href="img/1.jpg"><img src="img/thumbs/1_thumb.jpg"></a>
+    </li>
+    <li>
+        <a href="img/2.jpg"><img src="img/thumbs/2_thumb.jpg"></a>
+    </li>
+    <li>
+        <a href="img/3.jpg"><img src="img/thumbs/3_thumb.jpg"></a>
+    </li>
+    <li>
+        <a href="img/4.jpg"><img src="img/thumbs/4_thumb.jpg"></a>
+    </li>
+    <li>
+        <a href="img/5.jpg"><img src="img/thumbs/5_thumb.jpg"></a>
+    </li>
+    <li>
+        <a href="img/6.jpg"><img src="img/thumbs/6_thumb.jpg"></a>
+    </li>
+    <li>
+        <a href="img/7.jpg"><img src="img/thumbs/7_thumb.jpg"></a>
+    </li>
+</ul>
+<script>
+    $(document).jSquare('#jsquareSlider', {});
+</script>
+</body>
+</html>
